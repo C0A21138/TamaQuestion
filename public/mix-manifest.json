@@ -1,0 +1,9 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/leaflet.sprite.js": "/js/leaflet.sprite.js",
+    "/js/map.js": "/js/map.js",
+    "/js/L.Control.Locate.min.js": "/js/L.Control.Locate.min.js",
+    "/js/geojsonautocomplete.min.js": "/js/geojsonautocomplete.min.js",
+    "/css/app.css": "/css/app.css",
+    "/css/L.Control.Locate.min.css": "/css/L.Control.Locate.min.css"
+}

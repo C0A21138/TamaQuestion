@@ -1,0 +1,36 @@
+.active {
+    fill: rgb(255, 150, 0);
+  }
+
+#map_buttons {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    z-index: 1000;
+    width: 21px;
+    height: 21px;
+    background: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+
+/* SVG要素にCSSを適用 */
+#Layer_1 {
+    width: 21px;
+    height: 21px;
+  }
+
+#menu_map {
+    color: #659bff;
+    fill: #659bff;
+}
+
+#view_map {
+  margin: 0; 
+  margin-bottom: 10px;
+  padding: 0;
+  height: 75vh;
+  width: 100%;
+}
