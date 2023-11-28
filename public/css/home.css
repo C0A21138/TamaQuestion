@@ -6,3 +6,10 @@ h1 {
     color: #659bff;
     fill: #659bff;
 }
+
+#post_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

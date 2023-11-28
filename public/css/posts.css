@@ -65,6 +65,10 @@ h1 {
     fill: #659bff;
 }
 
-#post_form {
+#post_content {
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
