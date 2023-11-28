@@ -9,6 +9,7 @@
         <h1>投稿一覧</h1>
     @endif
     @foreach($posts as $post)
+    <div id="post_content">
         <div style="border: 2px solid #000; width: 20rem; border-radius: 10px; padding: 10px; margin: 10px; text-align: center; margin-bottom: 20px;">
             @if ($post->photo)
                 <img src="{{ asset('storage/' . $post->photo) }}" width='275' height="225">
@@ -22,6 +23,7 @@
             </p>
             <a href="{{ route('map') }}" onclick="setMapCoordinates({{ $post->lat }}, {{ $post->lng }})">地図画面へ</a>
         </div>
+    </div>
     @endforeach
 
     <script src="{{ asset('js/posts.js') }}"></script>
