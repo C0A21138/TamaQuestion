@@ -9,7 +9,7 @@ class AddPhotoPathToPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->string('photo_path')->nullable(); // nullable() は写真が必須でない場合に使用します
+            $table->string('photo_path')->nullable();
         });
     }
 
