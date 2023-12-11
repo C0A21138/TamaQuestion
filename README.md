@@ -4,7 +4,8 @@
 ## テスト方法
 ### 1. XAMPPのインストール(Windows)
 以下のURLでXAMPPをインストールする  
-https://www.apachefriends.org/jp/download.html
+https://www.apachefriends.org/jp/download.html  
+PHPのバージョン8.1以上を選択してダウンロード
 
 
 ### 2. Composerのインストール(Windows)
