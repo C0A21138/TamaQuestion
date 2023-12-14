@@ -25,8 +25,9 @@ PHPのバージョン8.1以上を選択してダウンロード
 
 ### 2. Composerのインストール(Windows)
 以下のURLでComposerをインストールする  
-https://getcomposer.org/doc/00-intro.md#installation-windows
-
+https://getcomposer.org/doc/00-intro.md#installation-windows  
+Composer-Setup.exeをインストールし、実行する  
+![composer](https://github.com/C0A21138/TamaQuestion/assets/85669940/c1867ec4-9c80-45db-9faf-89bc4c4dde28)
 
 ### 3. アプリケーションの開発ソースをインストールする
 ``` shell
@@ -35,6 +36,10 @@ $ cd TamaQuestion
 $ composer install
 $ cp .env.example .env
 $ php artisan key:generate
+```
+エラーが出た場合は、以下を実行した後に再度composer installより先を実行してください。
+``` shell
+$ composer update
 ```
 
 ### 4. データベースに接続
