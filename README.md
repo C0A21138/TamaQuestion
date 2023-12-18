@@ -51,16 +51,16 @@ DB_DATABASE=[データベースの名前]
 DB_USERNAME=[接続するユーザ名]  
 DB_PASSWORD=[接続するユーザのパスワード]  
   
-データーベースがない場合、XAMPPを立ち上げ、以下の手順で作成してください。
-#### 1. ApacheとMySQLのStartボタンを押下
-#### 2. MySQLのAdminボタンを押下
-#### 3. phpMyAdminにおいてデーターベースを新規作成  
+データーベースがない場合、XAMPPを立ち上げ、以下の手順で作成してください。  
+1. ApacheとMySQLのStartボタンを押下  
+2. MySQLのAdminボタンを押下  
+3. phpMyAdminにおいてデーターベースを新規作成
   
 以下でテーブルを作成します  
 ``` shell
 $ php artisan migrate
 ```
-
+  
 ### 5. 開発用サーバーを起動する
 ``` shell
 $ php artisan serve
