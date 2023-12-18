@@ -4,19 +4,29 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddPhotoToPostsTable extends Migration
+return new class extends Migration
 {
-    public function up()
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
     {
-        Schema::table('posts', function (Blueprint $table) {
-            $table->string('photo')->nullable(); // 'nullable()' は必要に応じて追加
+        Schema::create('posts', function (Blueprint $table) {
+            $table->increments('post_id');
+            $table->string('photo_path', 255);
+            $table->string('title', 16);
+            $table->string('content', 128);
+            $table->timestamps();
+            $table->decimal('lat', 10, 7);
+            $table->decimal('lng', 10, 7);
         });
     }
 
-    public function down()
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
     {
-        Schema::table('posts', function (Blueprint $table) {
-            $table->dropColumn('photo');
-        });
+        Schema::dropIfExists('posts');
     }
-}
+};
