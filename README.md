@@ -36,6 +36,7 @@ $ cd TamaQuestion
 $ composer install
 $ cp .env.example .env
 $ php artisan key:generate
+$ php artisan storage:link 
 ```
 エラーが出た場合は、以下を実行した後に再度composer installより先を実行してください。
 ``` shell
