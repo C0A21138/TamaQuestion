@@ -59,7 +59,7 @@ function validateCoordinates() {
 // 写真の非同期バリデーション
 function validatePhotoAsync() {
     return new Promise((resolve, reject) => {
-        const photoInput = document.getElementById('photo');
+        const photoInput = document.getElementById('photo_path');
         const allowedFormats = ['jpeg', 'jpg', 'png', 'gif'];
 
         // ファイルが選択されているか確認

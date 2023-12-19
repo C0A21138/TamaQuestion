@@ -108,7 +108,7 @@ fetch('/api/posts')
     .then(posts => {
         // マーカーを設置
         posts.forEach(post => {
-          const popup_contents = `<img src="/storage/${post.photo}" width='190' height="150"><br><b><p style='text-align: center;'>${post.title}</p></b><p>${post.content}</p>`;
+          const popup_contents = `<img src="/storage/${post.photo_path}" width='190' height="150"><br><b><p style='text-align: center;'>${post.title}</p></b><p>${post.content}</p>`;
           const popup = L.popup({ maxWidth: 200 }).setContent(popup_contents);
           post_marker = L.marker([post.lat, post.lng]).addTo(map)
                 .bindPopup(popup)

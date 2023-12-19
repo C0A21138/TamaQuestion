@@ -10,7 +10,7 @@ class Post extends Model
         // MassAssignmentを許可するフィールド
         'title',
         'content',
-        'photo',
+        'photo_path',
         'lat',
         'lng',
     ];

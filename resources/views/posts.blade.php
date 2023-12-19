@@ -10,7 +10,7 @@
             <form method="post" action="{{ url('/posts') }}" enctype="multipart/form-data">
                 @csrf
                 <label>写真:</label>
-                <input type="file" name="photo" id="photo" required accept=".jpg, .jpeg, .png, .gif" onchange="previewImage(event)">
+                <input type="file" name="photo_path" id="photo_path" required accept=".jpg, .jpeg, .png, .gif" onchange="previewImage(event)">
                 <div id="imagePreview"></div>
                 <label>タイトル:</label>
                 <input type="text" name="title" required>

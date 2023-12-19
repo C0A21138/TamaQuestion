@@ -11,8 +11,8 @@
     @foreach($posts as $post)
     <div id="post_content">
         <div style="border: 2px solid #000; width: 20rem; border-radius: 10px; padding: 10px; margin: 10px; text-align: center; margin-bottom: 20px;">
-            @if ($post->photo)
-                <img src="{{ asset('storage/' . $post->photo) }}" width='275' height="225">
+            @if ($post->photo_path)
+                <img src="{{ asset('storage/' . $post->photo_path) }}" width='275' height="225">
             @endif
             <h2>{{ $post->title }}</h2>
             <p style="margin: 0 auto; max-width: 17em;">{{ $post->content }}</p>

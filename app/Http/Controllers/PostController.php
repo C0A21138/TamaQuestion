@@ -21,21 +21,21 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $validator = $request->validate([
             'title' => 'required',
             'content' => 'required',
-            'photo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'photo_path' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
         // アップロードされた写真の処理
-        $photo = $request->file('photo');
+        $photo = $request->file('photo_path');
         $photoPath = $photo->store('photos', 'public');
 
         // 新しい投稿を作成
         Post::create([
             'title' => $request->input('title'),
             'content' => $request->input('content'),
-            'photo' => $photoPath,
+            'photo_path' => $photoPath,
             'lat' => $request->input('lat'),
             'lng' => $request->input('lng'),
         ]);
