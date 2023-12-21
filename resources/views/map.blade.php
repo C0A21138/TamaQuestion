@@ -16,7 +16,7 @@
 @section('title', 'Map')
 
 @section('content')
-<script>
+<script> 
   var redIcon = L.icon({
     iconUrl: '{{ asset("images/RedMarker.svg") }}', // 画像ファイルのパス
     iconSize: [30, 43], // アイコンのサイズ

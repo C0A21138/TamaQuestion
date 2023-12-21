@@ -33,8 +33,8 @@ function previewImage(event) {
 }
 
 function moveToMap() {
-    // 地図画面に移動する処理を追加
-    window.location.href = '/map'; // ページのURLやパスを適切なものに変更
+    // 地図画面に移動する
+    window.location.href = '/map?markerMode=true';
 }
 
 // 緯度・経度のバリデーション

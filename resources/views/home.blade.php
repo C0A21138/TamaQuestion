@@ -26,6 +26,5 @@
     </div>
     @endforeach
 
-    <script src="{{ asset('js/posts.js') }}"></script>
     <script src="{{ asset('js/home.js') }}"></script>
 @endsection

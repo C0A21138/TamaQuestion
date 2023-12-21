@@ -1,3 +1,24 @@
+document.addEventListener('DOMContentLoaded', function () {
+  // 現在のURLを取得
+  var currentUrl = window.location;
+
+  // URLを解析してパラメータを取得
+  var urlParams = new URLSearchParams(currentUrl.search);
+
+  // 'markerMode' パラメータの値を取得
+  var markerModeValue = urlParams.get('markerMode');
+
+  // パラメータが存在しない場合、デフォルトでfalseとして扱う
+  isMarkerMode = markerModeValue == 'true' || false;
+
+  // isMarkerModeの値を使用して適切な処理を行う
+  if (isMarkerMode) {
+      event.stopPropagation(); // イベント伝播を停止
+      // マーカー設置モードの場合のスタイルを適用
+      document.getElementById('path2').classList.add('active');
+  }
+});
+
 // 緯度経度の範囲チェック関数
 function isWithinBounds(lat, lng) {
   return (lat >= -90 && lat <= 90) && (lng >= -180 && lng <= 180);
@@ -87,7 +108,8 @@ map.on('click', function (e) {
   }
 });
 
-var isMarkerMode = false; // マーカー設置モードのトグル変数
+// マーカー設置モードのトグル変数
+var isMarkerMode = false;
 
 document.getElementById('map_buttons').addEventListener('click', function () {
   event.stopPropagation(); // イベント伝播を停止
