@@ -5,6 +5,15 @@
 @section('title', 'Quiz')
 
 @section('content')
+<!--
+とりあえずボタンを押したら画面遷移できるようにしました。
+figmaの通りボタン内の文字の色は黒になってます。
+あとはアイコンを入れるといいと思います。
+注意事項
+1.遷移先を大学のホムペにしているのでアプリ実装時に直すこと
+2.アイコンを入れてないので後で入れること
+3.figmaのurlも残してあるので実装時に消したほうがいいと思う
+-->
     <div style="text-align: center;">
         <a href="https://www.teu.ac.jp/">
         <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 100px;">
@@ -15,13 +24,13 @@
         </a>
         <br>
         <div style="text-align:left;">
-        わからない場合
+        わからない場合icon
         </div>
         <br>
         <a href="https://www.teu.ac.jp/">
         <div style="padding: 20px; margin-bottom: 20px; border: 1px solid #333333; border-radius: 10px;">
         <font color="#000000">
-        今日のおすすめクイズ
+        icon今日のおすすめクイズ
         <font>
         </div>
         </a>
@@ -30,7 +39,7 @@
         <a href="https://www.teu.ac.jp/">
         <div style="padding: 20px; margin-bottom: 20px; border: 1px solid #333333; border-radius: 10px;">
         <font color="#000000">
-        アニメクイズ
+        iconアニメクイズ
         <font>
         </div>
         </a>
@@ -38,7 +47,7 @@
         <a href="https://www.teu.ac.jp/">
         <div style="padding: 20px; margin-bottom: 20px; border: 1px solid #333333; border-radius: 10px;">
         <font color="#000000">
-        ドラマ・映画クイズ
+        iconドラマ・映画クイズ
         <font>
         </div>
         </a>
@@ -46,7 +55,7 @@
         <a href="https://www.teu.ac.jp/">
         <div style="padding: 20px; margin-bottom: 20px; border: 1px solid #333333; border-radius: 10px;">
         <font color="#000000">
-        鉄道クイズ
+        icon鉄道クイズ
         <font>
         </div>
         </a>
