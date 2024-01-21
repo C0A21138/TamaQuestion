@@ -35,7 +35,7 @@
                 <span>Home</span>
             </div>
         </a>
-        <a href="/quiz">
+        <a href="/quizzes">
             <div class="menu-item" id="menu_quiz">
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
                     <path

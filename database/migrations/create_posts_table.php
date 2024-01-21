@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('photo_path', 255);
             $table->string('title', 16);
             $table->string('content', 128);
-            $table->timestamps();
             $table->decimal('lat', 10, 7);
             $table->decimal('lng', 10, 7);
+            $table->timestamps();
         });
     }
 
