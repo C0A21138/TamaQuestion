@@ -56,6 +56,13 @@ h1 {
     text-align: center;
 }
 
+#page_title {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #333333;
+    border-radius: 100px;
+}
+
 .error-message {
     text-align: center;
 }

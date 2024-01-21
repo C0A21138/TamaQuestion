@@ -2,6 +2,13 @@ h1 {
     text-align: center;
 }
 
+#page_title {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #333333;
+    border-radius: 100px;
+}
+
 #menu_home {
     color: #659bff;
     fill: #659bff;
@@ -12,4 +19,14 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+#post {
+    border: 2px solid #000;
+    width: 20rem;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }

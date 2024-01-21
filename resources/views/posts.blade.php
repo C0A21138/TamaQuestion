@@ -3,7 +3,9 @@
 @section('title', 'Post')
 
 @section('content')
-    <h1>投稿</h1>
+    <div id="page_title">
+        <h1>投稿</h1>
+    </div>
     <div id="post_content">
         <div id="post_form">
             <!-- フォームを表示 -->

@@ -5,9 +5,18 @@
 @section('title', 'Quiz')
 
 @section('content')
-    <h1>ジャンル一覧</h1>
+    <div id="page_title">
+        <h1>クイズ</h1>
+    </div>
 
-    @foreach ($genres as $genre)
-        <a href="{{ url('/quizzes', $genre->category) }}">{{ $genre->category }}</a><br>
-    @endforeach
+    <div id="post_content">
+        <p id="content_title">ジャンル</p>
+        @foreach ($genres as $genre)
+            <a href="{{ url('/quizzes', $genre->category) }}">
+                <div id="genre">
+                    <span>{{ $genre->category }}</span>
+                </div>
+            </a>
+        @endforeach
+    </div>
 @endsection

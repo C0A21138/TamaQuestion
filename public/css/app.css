@@ -17,8 +17,7 @@ body {
   font-family: "Kosugi Maru", sans-serif;
 }
 body h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  line-height: 0;
 }
 body button {
   display: flex;
