@@ -38,7 +38,41 @@ h1 {
     font-size: 18px;
 }
 
+#quiz {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+#random {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
 #genre:hover {
+    color: #659bff;
+    fill: #659bff;
+}
+
+#quiz:hover {
+    color: #659bff;
+    fill: #659bff;
+}
+
+#random:hover {
     color: #659bff;
     fill: #659bff;
 }

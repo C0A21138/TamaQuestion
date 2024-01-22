@@ -31,6 +31,13 @@ class QuizController extends Controller
         return view('show_quiz', compact('quiz'));
     }
 
+    public function randomQuiz($category)
+    {
+        $randomQuiz = Quiz::byCategory($category)->inRandomOrder()->first();
+
+        return view('random_quiz', compact('randomQuiz'));
+    }
+
     public function checkAnswer(Request $request, $quizId)
     {
         $quiz = Quiz::findOrFail($quizId);

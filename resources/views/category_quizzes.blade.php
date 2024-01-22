@@ -5,9 +5,24 @@
 @section('title', 'Quiz')
 
 @section('content')
-    <h1>{{ $category }}のクイズ一覧</h1>
+    <div id="page_title">
+        <h1>クイズ</h1>
+    </div>
 
-    @foreach ($quizzes as $quiz)
-        <a href="{{ url('/quiz', $quiz->id) }}">{{ $quiz->title }}</a><br>
-    @endforeach
+    <div id="post_content">
+        <p id="content_title">ジャンル：{{ $category }}</p>
+        <a href="{{ route('random_quiz', ['category' => $category]) }}">
+            <div id="random">
+                <span>ランダムに問題を出題する</span>
+            </div>
+        </a>
+        @foreach ($quizzes as $quiz)
+            <a href="{{ url('/quiz', $quiz->id) }}">
+                <div id="quiz">
+                    {{ $loop->iteration }}.
+                    <span>{{ $quiz->title }}</span>
+                </div>
+            </a>
+        @endforeach
+    </div>
 @endsection

@@ -26,6 +26,7 @@ Route::get('/map', function () {
 Route::get('/', [PostController::class, 'showPosts']);
 Route::get('/quizzes', [QuizController::class, 'index']);
 Route::get('/quizzes/{category}', [QuizController::class, 'showQuizzes'])->name('show_quizzes');
+Route::get('/quizzes/{category}/random', [QuizController::class, 'randomQuiz'])->name('random_quiz');
 Route::get('/quiz/{quizId}', [QuizController::class, 'showQuiz'])->name('show_quiz');
 Route::post('/quiz/{quizId}/check', [QuizController::class, 'checkAnswer'])->name('check');
 Route::get('/quiz/{quizId}/result/{isCorrect}', [QuizController::class, 'showResult'])->name('result');
