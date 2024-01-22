@@ -9,8 +9,8 @@
         <h1>クイズ</h1>
     </div>
 
-    <div id="post_content">
-        <p id="content_title">ジャンル</p>
+    <p id="content_title">ジャンル</p>
+    <div>
         @foreach ($genres as $genre)
             <a href="{{ url('/quizzes', $genre->category) }}">
                 <div id="genre">

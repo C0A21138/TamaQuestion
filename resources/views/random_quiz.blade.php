@@ -5,16 +5,22 @@
 @section('title', 'Random Quiz - ' . $randomQuiz->category)
 
 @section('content')
-    <h1>{{ $randomQuiz->title }}</h1>
-    <img src="{{ asset($randomQuiz->image_path) }}" alt="Quiz Image">
-    <p>{{ $randomQuiz->problem_statement }}</p>
+    <div id="page_title">
+        <h1>クイズ</h1>
+    </div>
 
-    <form method="post" action="{{ route('check', ['quizId' => $randomQuiz->id]) }}">
-        @csrf
-        <input type="radio" name="selected_answer" value="1"> {{ $randomQuiz->answer_1 }}<br>
-        <input type="radio" name="selected_answer" value="2"> {{ $randomQuiz->answer_2 }}<br>
-        <input type="radio" name="selected_answer" value="3"> {{ $randomQuiz->answer_3 }}<br>
-        <input type="radio" name="selected_answer" value="4"> {{ $randomQuiz->answer_4 }}<br>
-        <button type="submit">回答する</button>
-    </form>
+    <div id="quiz_content">
+        <h2>{{ $randomQuiz->title }}</h2>
+        <img id="quiz_image" src="{{ asset($randomQuiz->image_path) }}" alt="Quiz Image">
+        <p>{{ $randomQuiz->problem_statement }}</p>
+
+        <form method="post" action="{{ route('check', ['quizId' => $randomQuiz->id]) }}">
+            @csrf
+            <input type="radio" name="selected_answer" value="1"> {{ $randomQuiz->answer_1 }}<br>
+            <input type="radio" name="selected_answer" value="2"> {{ $randomQuiz->answer_2 }}<br>
+            <input type="radio" name="selected_answer" value="3"> {{ $randomQuiz->answer_3 }}<br>
+            <input type="radio" name="selected_answer" value="4"> {{ $randomQuiz->answer_4 }}<br>
+            <button type="submit">回答する</button>
+        </form>
+    </div>
 @endsection

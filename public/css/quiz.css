@@ -14,14 +14,6 @@ h1 {
     fill: #659bff;
 }
 
-#quiz_content {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 #content_title {
     text-align: center;
 }
@@ -75,4 +67,36 @@ h1 {
 #random:hover {
     color: #659bff;
     fill: #659bff;
+}
+
+#quiz_content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quiz_image {
+    margin-bottom: 20px;
+}
+
+#correct {
+    color: red;
+    font-size: 50px;
+    margin: 0 0 0 25px;
+}
+
+#incorrect {
+    color: blue;
+    font-size: 50px;
+    margin: 0 0 0 20px;
+    margin-bottom: 30px;
+}
+
+#explanation {
+    margin-bottom: 30px;
+}
+
+button {
+    margin-top: 20px;
 }

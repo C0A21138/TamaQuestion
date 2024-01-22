@@ -9,7 +9,7 @@
         <h1>クイズ</h1>
     </div>
 
-    <div id="post_content">
+    <div>
         <p id="content_title">ジャンル：{{ $category }}</p>
         <a href="{{ route('random_quiz', ['category' => $category]) }}">
             <div id="random">
