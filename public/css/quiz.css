@@ -100,3 +100,10 @@ h1 {
 button {
     margin-top: 20px;
 }
+
+#problem_statement, #explanation {
+    display:inline-block;
+    vertical-align: top;
+    width: 16rem;
+    height: 5rem;
+}

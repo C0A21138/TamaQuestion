@@ -23,6 +23,10 @@ Route::get('/map', function () {
     return view('map');
 })->name('map');
 
+Route::get('/quiz_create', function () {
+    return view('quiz_create');
+})->name('quiz_create');
+
 Route::get('/', [PostController::class, 'showPosts']);
 Route::get('/quizzes', [QuizController::class, 'index']);
 Route::get('/quizzes/{category}', [QuizController::class, 'showQuizzes'])->name('show_quizzes');
