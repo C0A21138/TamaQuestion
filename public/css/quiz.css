@@ -9,32 +9,16 @@ h1 {
     border-radius: 100px;
 }
 
-#menu_quiz {
-    color: #659bff;
-    fill: #659bff;
-}
-
 #content_title {
     text-align: center;
 }
 
-#genre {
+#genre, #quiz {
     border: 1px solid #000;
     border-radius: 10px;
     padding: 15px;
     margin: 10px;
-    text-align: center;
-    margin-bottom: 30px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-}
-
-#quiz {
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
+    height: 30px;
     text-align: center;
     margin-bottom: 30px;
     text-decoration: none;
@@ -54,16 +38,9 @@ h1 {
     font-size: 18px;
 }
 
-#genre:hover {
-    color: #659bff;
-    fill: #659bff;
-}
-
-#quiz:hover {
-    color: #659bff;
-    fill: #659bff;
-}
-
+#menu_quiz, 
+#genre:hover, 
+#quiz:hover, 
 #random:hover {
     color: #659bff;
     fill: #659bff;
@@ -99,4 +76,13 @@ h1 {
 
 button {
     margin-top: 20px;
+}
+
+ion-icon {
+    height: 30px;
+    width: 30px;
+}
+
+#category_text {
+    line-height: 30px;
 }

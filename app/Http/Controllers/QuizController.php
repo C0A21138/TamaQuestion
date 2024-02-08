@@ -16,6 +16,33 @@ class QuizController extends Controller
         return view('quizzes', compact('genres'));
     }
 
+    public function create()
+    {
+        return view('create_quiz');
+    }
+
+    public function store(Request $request)
+    {
+        // フォームのデータをバリデーション
+        $validatedData = $request->validate([
+            'title' => 'required|max:32',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'problem_statement' => 'required|max:255',
+            'answer_1' => 'required|max:32',
+            'answer_2' => 'required|max:32',
+            'answer_3' => 'required|max:32',
+            'answer_4' => 'required|max:32',
+            'correct_answer_num' => 'required|integer|between:1,4',
+            'explanation' => 'required|max:255',
+            'category' => 'required|max:32',
+        ]);
+
+        // バリデーションを通過したデータを保存
+        Quiz::create($validatedData);
+
+        return redirect()->route('create_quiz')->with('success', 'クイズが投稿されました');
+    }
+
     public function showQuizzes($category)
     {
         // 選択したジャンルのクイズ一覧を取得

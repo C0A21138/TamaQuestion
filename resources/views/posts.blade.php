@@ -11,15 +11,16 @@
             <!-- フォームを表示 -->
             <form method="post" action="{{ url('/posts') }}" enctype="multipart/form-data">
                 @csrf
-                <label>写真:</label>
-                <input type="file" name="photo_path" id="photo_path" required accept=".jpg, .jpeg, .png, .gif" onchange="previewImage(event)">
+                <p>写真:
+                    <input type="file" name="photo_path" id="photo_path" required accept=".jpg, .jpeg, .png, .gif" onchange="previewImage(event)">
+                </p>
                 <div id="imagePreview"></div>
-                <label>タイトル:</label>
-                <input type="text" name="title" required>
-                <br>
-                <label class="content">内容:</label>
-                <textarea name="content" required></textarea>
-                <br>
+                <p>タイトル:
+                    <input type="text" name="title" required>
+                </p>
+                <p class="content">内容:
+                    <textarea name="content" required></textarea>
+                </p>
                 <div class="Coordinate">
                     <div class="lat_lng">
                         <div class="label-input">
