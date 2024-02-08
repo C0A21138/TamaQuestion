@@ -86,3 +86,10 @@ ion-icon {
 #category_text {
     line-height: 30px;
 }
+
+#problem_statement, #explanation {
+    display:inline-block;
+    vertical-align: top;
+    width: 16rem;
+    height: 5rem;
+}

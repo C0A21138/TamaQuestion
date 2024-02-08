@@ -50,5 +50,5 @@ Route::middleware('auth:admin')->group(function () {
         return view('admin.top');
     })->name('admin.top');
     Route::get('/quiz/create', [QuizController::class, 'create'])->name('create_quiz');
-    Route::post('/quiz', [QuizController::class, 'store'])->name('quiz.store');
+    Route::post('/quiz', [QuizController::class, 'store'])->name('quiz_store');
 });
